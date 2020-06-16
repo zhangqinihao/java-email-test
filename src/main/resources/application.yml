@@ -1,0 +1,23 @@
+server:
+  port: 8089
+spring:
+  mail:
+    host: smtp.qq.com
+    password: tllqmanudlmxjcij
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+    username: 1261553384@qq.com
+  datasource:
+    url: jdbc:mysql://localhost:3306/bills?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1234
+mybatis:
+  type-aliases-package: cn.jiyun.mapper
+  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
