@@ -62,9 +62,9 @@ public class EmpController {
 
         mailMessage.setText(code);
         //发送人（必须和配置文件中的username相同）
-        mailMessage.setFrom("1261553384@qq.com");
+        mailMessage.setFrom("发信人qq邮箱写你自己邮箱");
 
-        //mailMessage.setTo("1452258894@qq.com");
+        //mailMessage.setTo("收信人qq邮箱");
         mailMessage.setTo(qq);
 
         mailSender.send(mailMessage);
